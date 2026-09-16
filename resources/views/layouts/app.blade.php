@@ -54,9 +54,9 @@
 
 
             <!-- Data Anggota -->
-            <a href="#"
-               class="menu-link">
-                Data Anggota
+            <a href="{{ route('members.index') }}"
+                class="menu-link {{ request()->routeIs('members.*') ? 'active' : '' }}">
+                    Data Anggota
             </a>
 
 
