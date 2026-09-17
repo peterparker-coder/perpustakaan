@@ -61,7 +61,7 @@
 
 
             <!-- Peminjaman -->
-            <a href="#"
+            <a href="{{ route('loans.index') }}"
                class="menu-link">
                 Peminjaman
             </a>
