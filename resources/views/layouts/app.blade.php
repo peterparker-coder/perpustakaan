@@ -33,8 +33,8 @@
         <nav class="menu">
 
             <!-- Dashboard -->
-            <a href="#"
-               class="menu-link">
+            <a href="{{ route('dashboard') }}"
+            class="menu-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                 Dashboard
             </a>
 
@@ -62,21 +62,21 @@
 
             <!-- Peminjaman -->
             <a href="{{ route('loans.index') }}"
-               class="menu-link">
+               class="menu-link {{ request()->routeIs('loans.*') ? 'active' : '' }}">
                 Peminjaman
             </a>
 
 
             <!-- Pengembalian -->
-            <a href="#"
-               class="menu-link">
+           <a href="{{ route('returns.index') }}"
+            class="menu-link {{ request()->routeIs('returns.*') ? 'active' : '' }}">
                 Pengembalian
             </a>
 
 
             <!-- Riwayat -->
-            <a href="#"
-               class="menu-link">
+            <a href="{{ route('history.index') }}"
+            class="menu-link {{ request()->routeIs('history.*') ? 'active' : '' }}">
                 Riwayat
             </a>
 
